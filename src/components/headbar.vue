@@ -166,7 +166,7 @@ div{
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
-    box-shadow: 2px 0px 10px rgba(200,200,200,1);
+    box-shadow: 2px 0 10px rgba(200,200,200,1);
     border-radius: 10px;
 
 }
