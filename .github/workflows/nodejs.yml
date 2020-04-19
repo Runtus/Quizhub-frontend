@@ -31,7 +31,7 @@ jobs:
         CI: true
         SSH_PRIVATE_KEY : ${{secrets.quizhub}} 
         ARGS: "-rltgoDzvO --delete"
-        SOURCE: "/"
+        SOURCE: "dist/"
         REMOTE_HOST: "39.98.58.226"
         REMOTE_USER: "root"
         TARGET: "/root/quizhub" 
