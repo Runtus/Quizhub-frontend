@@ -1,30 +1,30 @@
 <template>
-    <transition name="sidebar">
-<!--        <button v-on:click="sidebarshow">-->
-<!--            gogo-->
-<!--        </button>-->
-        <div class="sidebar-component"  v-on:mouseleave="mouseleave" v-show="is_mouse_on">
+    <div class="sidebar-component" :style="{height : `${screenY * 0.8}px`}">
 
-        </div>
-    </transition>
+    </div>
 </template>
 
 <script>
     export default {
         name: "sidebar",
+        methods:{
+
+        },
         data(){
             return {
-                is_mouse_on : false
+                screenY : window.innerHeight
             }
         },
-        methods:{
-            sidebarshow(){
-                this.is_mouse_on = true;
-            },
-            mouseleave(){
-                this.is_mouse_on = false;
+        created() {
+            console.log(this.screenY)
+        },
+        mounted() {
+            var that = this;
+            window.onresize = () => {
+                that.screenY = window.innerHeight;
             }
         }
+
     }
 </script>
 
@@ -33,17 +33,11 @@
     height: 600px;
     width: 100px;
     background-color: greenyellow;
+
+
 }
 
-.sidebar-leave,.sidebar-enter-to{
-    margin-left: 0;
-}
 
-.sidebar-leave-active.sidebar-enter-active{
-    transition: margin-left 0.2s ease-in-out;
-}
 
-.sidebar-leave-to,.sidebar-enter{
-    margin-left: -100px;
-}
+
 </style>

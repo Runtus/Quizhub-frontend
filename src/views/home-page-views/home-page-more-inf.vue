@@ -143,6 +143,7 @@ div{
     border: 1px solid rgb(238,244,244);
     padding-bottom: 20px;
     position: relative;
+
 }
 
 /*仓库*/
