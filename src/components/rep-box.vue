@@ -3,7 +3,9 @@
             <p class="hover-before title">{{data.rep_title}}</p>
             <p class="hover-before tag"><img src="@/assets/tag.svg" class="tag-icon" alt="tag标签">{{data.rep_tag}}</p>
             <p class="hover-before star-fork"><span id="star">{{data.rep_star}}<img src="@/assets/star.svg" alt="star标签"></span><span id="fork">{{data.rep_fork}}<img src="@/assets/fork.svg" alt="forks标签"></span></p>
+<!--           增加一个 follow-->
             <div class="hover-active intro"><img src="@/assets/详情.svg"><p>{{data.rep_intro}}</p></div>
+
         </div>
 </template>
 
