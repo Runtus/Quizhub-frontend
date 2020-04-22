@@ -33,6 +33,6 @@ jobs:
         SSH_PRIVATE_KEY : ${{secrets.quizhub}} 
         ARGS: "-rltgoDzvO --delete"
         SOURCE: "dist/"
-        REMOTE_HOST: "39.98.58.226"
+        REMOTE_HOST: "39.99.133.64"
         REMOTE_USER: "root"
         TARGET: "/root" 
